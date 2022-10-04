@@ -1,5 +1,7 @@
 ### Usage
-'''bash
+
+```bash
 pip3 install -r requirements.txt
-'''
-run it?
+```
+
+run the script?

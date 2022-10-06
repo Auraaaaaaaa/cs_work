@@ -10,6 +10,7 @@ def clear():
       _ = os.system('clear')
    else:
       _ = os.system('cls')
+clear()
 print("Welcome to the ticketing system of doom that i was asked to make")
 print("Here are the enterance ticket prices:\nAdult: £20\nChild: £10\nSenior: £11\nWristband: £20\nParking: Free")
 adult_tickets = int(input("How many adult tickets would you like to buy? "))

@@ -13,11 +13,15 @@ def clear():
 clear()
 print("Welcome to the ticketing system of doom that i was asked to make")
 print("Here are the enterance ticket prices:\nAdult: £20\nChild: £10\nSenior: £11\nWristband: £20\nParking: Free")
-adult_total = int(input("How many adult tickets would you like to buy? "))
-child_total = int(input("How many child tickets would you like to buy? "))
-senior_total = int(input("How many senior tickets would you like to buy? "))
-wrist_total = int(input("How many wristband tickets would you like to buy? "))
-if (input("Do you need a parking pass? (y/n) ").lower == "y"):
+try:
+    adult_total = int(input("How many adult tickets would you like to buy? "))
+    child_total = int(input("How many child tickets would you like to buy? "))
+    senior_total = int(input("How many senior tickets would you like to buy? "))
+    wrist_total = int(input("How many wristband tickets would you like to buy? "))
+except ValueError as e:
+    print("Please enter a valid number")
+    exit()
+if (input("Do you need a parking pass? (Y/N) ").upper == "Y"):
     parking = True
 else:
     parking = False

@@ -1,11 +1,5 @@
 from random import randint
-
-
-
 print("enter your word")
-
-
-
 s = input()
 a = randint(1, 99099)
 new_word = ""

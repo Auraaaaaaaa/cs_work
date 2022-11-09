@@ -1,6 +1,5 @@
 import datetime
 import os
-from turtle import st
 from reportlab.platypus import SimpleDocTemplate, Table, Paragraph, TableStyle
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4

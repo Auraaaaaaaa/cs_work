@@ -32,7 +32,7 @@ print("Please pay the cashier")
 print("Your total is £" + str(total))
 print("I am afraid that you need to pay with cash, in £10 or £20 notes")
 notes_10 = int(input("How many £10 notes do you have? "))
-notes_20 = int(input("How many £20 notes do you have? "))
+notes_20 = int(input("How many £20 notes do you have? "))h
 def issue_ticket():
     doc = SimpleDocTemplate("receipt.pdf", pagesize=A4)
     elements = []

@@ -1,12 +1,8 @@
-#calculate fibbonaci until the number has 1000 digits, and prrint the index of the number
-def get_digits(n):
-    return len(str(n))
-num = 0
-n1, n2 = 0, 1
-count = 0
-while get_digits(num) <= 1000:
-    num = n1 + n2
-    n1 = n2
-    n2 = num
-    count += 1
-print(count)
+fib_nums = []
+fib_nums.append(1)
+fib_nums.append(1)
+i = 2
+while len(str(fib_nums[i-1])) < 1000:
+    fib_nums.append(fib_nums[i-1] + fib_nums[i-2])
+    i += 1
+print(i)
